@@ -1,5 +1,5 @@
 {
-    "homepage": "http://klaudialota.github.io/my-shop/",
+    "homepage": "https://KlaudiaLota.github.io/Klaudia_Lota_Web_Wroclaw",
     "name": "my-shop",
     "version": "0.1.0",
     "private": true,
@@ -45,8 +45,5 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
-    },
-    "devDependencies": {
-        "gh-pages": "^6.3.0"
     }
 }

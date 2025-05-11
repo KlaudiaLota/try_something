@@ -23,7 +23,7 @@ const ProductList = () => {
     const handleAddToCart = (product: Product) => {
         addToCart(product);
         toast.success(`Dodano ${product.name} do koszyka!`);
-    };
+    }
 
     return (
         <div className="product-list-container">
