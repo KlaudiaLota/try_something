@@ -1,0 +1,66 @@
+<!-- public/thank-you.html -->
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Dziękujemy za zamówienie</title> <!--- Thank you for your order -->
+    <style>
+        body {
+            text-align: center;
+        }
+        h1 {
+            color: #28a745;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #ffffff;
+            border: 1px solid #ddd;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Zamówienie złożone pomyślnie!</h1> <!--- Your order has been placed successfully! -->
+    <a href="/" id="back-link">Wróć do strony głównej</a> <!---  Return to the homepage -->
+
+    <h2>Podsumowanie zamówienia:</h2> <!--- Order summary: -->
+    <div id="order-summary"></div>
+    <p><strong>Łączna kwota:</strong> <span id="total"></span> zł</p> <!--- Total amount: -->
+
+    <script>
+        const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+        const summaryDiv = document.getElementById("order-summary");
+        const totalSpan = document.getElementById("total");
+        let total = 0;
+        const list = document.createElement("ul");
+
+        cart.forEach(item => {
+            const itemTotal = (item.price.main + item.price.fractional / 100) * item.quantity;
+            total += itemTotal;
+
+            const li = document.createElement("li");
+            li.textContent = `${item.name} – ilość: ${item.quantity}, cena za szt.: ${(item.price.main + item.price.fractional / 100).toFixed(2)} zł, 
+                łącznie: ${itemTotal.toFixed(2)} zł`;
+            list.appendChild(li);
+        });
+
+        summaryDiv.appendChild(list);
+        totalSpan.textContent = total.toFixed(2);
+
+        document.getElementById("back-link").addEventListener("click", () => {
+            localStorage.removeItem("cart");
+        });
+    </script>
+
+</body>
+</html>
