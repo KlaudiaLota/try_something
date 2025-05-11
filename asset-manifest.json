@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/try_something/static/css/main.3372016f.css",
-    "main.js": "/try_something/static/js/main.9c373c6c.js",
-    "index.html": "/try_something/index.html",
-    "main.3372016f.css.map": "/try_something/static/css/main.3372016f.css.map",
-    "main.9c373c6c.js.map": "/try_something/static/js/main.9c373c6c.js.map"
+    "main.css": "/Klaudia_Lota_Web_Wroclaw/static/css/main.658a212b.css",
+    "main.js": "/Klaudia_Lota_Web_Wroclaw/static/js/main.f9a7daa5.js",
+    "static/js/453.37094a9a.chunk.js": "/Klaudia_Lota_Web_Wroclaw/static/js/453.37094a9a.chunk.js",
+    "index.html": "/Klaudia_Lota_Web_Wroclaw/index.html",
+    "main.658a212b.css.map": "/Klaudia_Lota_Web_Wroclaw/static/css/main.658a212b.css.map",
+    "main.f9a7daa5.js.map": "/Klaudia_Lota_Web_Wroclaw/static/js/main.f9a7daa5.js.map",
+    "453.37094a9a.chunk.js.map": "/Klaudia_Lota_Web_Wroclaw/static/js/453.37094a9a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3372016f.css",
-    "static/js/main.9c373c6c.js"
+    "static/css/main.658a212b.css",
+    "static/js/main.f9a7daa5.js"
   ]
 }
